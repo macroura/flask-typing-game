@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Word Game - End</title>
+</head>
+<body>
+    <h1>Game Over</h1>
+    <p>Final Word: {{ long_word }}</p>
+    <p>Your Score: {{ score }}</p>
+    <p>Elapsed Time: {{ elapsed_time }} seconds</p>
+    <p>Highscore: {{ highscore }}</p>
+    <form method="post" action="/">
+        <button type="submit">Play Again</button>
+    </form>
+</body>
+</html>
