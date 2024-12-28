@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Word Game - Play</title>
+</head>
+<body>
+    <h1>Word Game</h1>
+    <p>Current Prefix: {{ prefix }}</p>
+    <p>Cumulative Word: {{ long_word }}</p>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <form method="post">
+        <input type="text" name="word" placeholder="Enter a word" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
